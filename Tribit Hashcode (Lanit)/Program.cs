@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Tribit_Hashcode__Lanit_
+namespace Tribit
 {
     class Program
     {
@@ -118,7 +118,7 @@ namespace Tribit_Hashcode__Lanit_
 
             var result = string.Empty;
 
-            for (var i = 0; i < cellCount; i++)
+            for (var i = cellCount - 1; i >= 0; i--)
                 result += cells[i][0];
 
             return GetPyramid(result);
@@ -129,8 +129,8 @@ namespace Tribit_Hashcode__Lanit_
             var result = string.Empty;
 
             for (var i = 0; i < pyramid.Length; i++)
-                for (var j = 0; j < pyramid[i].Length; j++)
-                    result = pyramid[i][j] + result;
+            for (var j = 0; j < pyramid[i].Length; j++)
+                result = pyramid[i][j] + result;
 
             return result;
         }
