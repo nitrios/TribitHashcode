@@ -157,6 +157,5 @@ namespace Tribit
             if (args.Length != 0)
                 Process(args[0]);
         }
-
     }
 }
