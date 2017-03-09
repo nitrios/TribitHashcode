@@ -57,7 +57,7 @@ namespace Tribit
                 }
             }
 
-            Console.WriteLine(PiramidToString(pyramid));
+            Console.WriteLine(PyramidToString(pyramid));
             if (lenght == 1)
                 return pyramid;
 
@@ -124,7 +124,7 @@ namespace Tribit
             return GetPyramid(result);
         }
 
-        private static string PiramidToString(char[][] pyramid)
+        private static string PyramidToString(char[][] pyramid)
         {
             var result = string.Empty;
 
@@ -142,7 +142,7 @@ namespace Tribit
 
             do
             {
-                input = PiramidToString(GetPyramid(input));
+                input = PyramidToString(GetPyramid(input));
             } while (input.Length != 1);
 
             Console.WriteLine();
